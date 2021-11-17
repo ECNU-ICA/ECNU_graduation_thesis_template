@@ -1,0 +1,104 @@
+\chapter{绪\hskip 0.4cm 论}
+\label{ch1}
+\section{研究背景及意义}
+
+附图测试，如图 \ref{fig:4:cat_and_brid} 所示。
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \begin{scope}[every node/.style={circle,thick,draw}]
+      \node (A) at (0,0) {动物};
+      \node (B) at (-5,-2.5) {猫科动物};
+      \node (C) at (-3,-7) {猫};
+      \node (D) at (5,-2.5) {鸟类};
+      \node (E) at (3,-7) {啄木鸟};
+    \end{scope}
+
+    \begin{scope}[>={Stealth[black]},
+      every node/.style={fill=white,circle},
+      every edge/.style={draw=red,very thick}]
+      \path [->] (B) edge node {是 (1.0)} (A);
+      \path [->] (C) edge node {是 (5.96)} (B);
+      \path [->] (D) edge node {是 (1.0)} (A);
+      \path [->] (E) edge node {是 (2.0)} (D);
+      \path [->] (C) edge node {是 (5.88)} (A);
+      \path [->] (E) edge node {是 (1.0)} (A);
+      \path[dashed] [-] (C) edge[bend right=20] node {都是动物} (E);
+    \end{scope}
+  \end{tikzpicture}
+  \caption{“猫”与“啄木鸟”之间的联系}
+  \label{fig:4:cat_and_brid}
+\end{figure}
+
+
+附表测试，如表 \ref{tab:4:k-hop-n-near-node-num} 所示。
+\begin{table}[]
+  \centering
+  \caption{节点扩展 $n$ 个邻居且 $k$ 跳子图下的节点数量}
+  \label{tab:4:k-hop-n-near-node-num}
+  \begin{tabular}{cc|ccc}
+    \toprule
+                            & $k$ & \multirow{2}{*}{1} & \multirow{2}{*}{2} & \multirow{2}{*}{3} \\
+    $n$                     &     &                    &                    &                    \\
+    \midrule
+    \multicolumn{2}{c|}{1}  & 2   & 3                  & 4                                       \\
+    \multicolumn{2}{c|}{2}  & 3   & 7                  & 15                                      \\
+    \multicolumn{2}{c|}{3}  & 4   & 13                 & 40                                      \\
+    \multicolumn{2}{c|}{4}  & 5   & 21                 & 85                                      \\
+    \multicolumn{2}{c|}{5}  & 6   & 31                 & 156                                     \\
+    \multicolumn{2}{c|}{6}  & 7   & 43                 & 259                                     \\
+    \multicolumn{2}{c|}{7}  & 8   & 57                 & 400                                     \\
+    \multicolumn{2}{c|}{8}  & 9   & 73                 & 585                                     \\
+    \multicolumn{2}{c|}{9}  & 10  & 91                 & 820                                     \\
+    \multicolumn{2}{c|}{10} & 11  & 111                & 1111                                    \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+公式测试，如式 \ref{eq:1} 所示。
+\begin{equation}
+  \label{eq:1}
+  h_i^{(l+1)}=\sigma\Bigg(\frac{1}{M}\sum_{m=1}^{M}\sum_{j\in\mathcal{N}_i}\alpha_{{ij}_m}^{(l)}\textbf{W}^{(l)}_{m}h_{j}^{(l)}\Bigg)
+\end{equation}
+
+引用测试，如 xxx 的工作 \cite{zhao-etal-2020-ecnu}。
+
+脚注测试，如 ConceptNet-Numberbatch\footnote{ConceptNet-Numberbatch: https://github.com/commonsense/conceptnet-numberbatch} 所示。
+
+\section{国内外研究现状}
+\section{研究目标和内容}
+\paragraph{本文贡献点主要有如下三个：}
+
+\begin{enumerate}
+    \item 111
+    \item 222
+    \item 333
+\end{enumerate}
+
+
+\section{论文组织结构}
+本文主要研究针对 xxx，
+并据此 xxx，具体章节结构如下：
+
+第\ref{ch1}章，绪论。
+首先介绍本文研究的背景及意义，并依此展开国内外目前的研究现状，以及该问题的痛点及难点，
+之后明确本文的研究目标以及研究内容。
+
+第\ref{ch2}章，相关概念及研究。
+主要 xxx.
+
+第\ref{ch3}章，基于xxx 的方法 1。
+本章提出了 A 模型，
+该模型 xxx.
+
+第\ref{ch4}章，基于xxx 的方法 2。
+本章提出了 B 模型，
+该模型 xxx.
+
+第\ref{ch5}章，基于xxx 的方法 3。
+本章提出了 C 模型，
+该模型 xxx
+
+第\ref{ch7}章，总结与展望。
+对本文工作进行总结，分析本文的不足以及尚未解决的问题，同时对下一步工作进行展望。
