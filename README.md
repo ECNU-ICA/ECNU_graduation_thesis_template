@@ -1,6 +1,6 @@
 # 华东师范大学硕（博）士论文 LaTex 模板
 
-**使用 XeLaTex 编译**
+**使用 XeLaTex 编译，使用 Overleaf 的同学建议切换 texlive 版本为 2019/2020（2021 版本需要去除 `main.tex` 中的 `\include{}` 指令）**
 
 由 [im0qianqian](https://github.com/im0qianqian) 已做时效性更改，论文 demo 可查看 [main.pdf](./main.pdf)
 
