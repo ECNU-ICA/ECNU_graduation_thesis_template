@@ -248,18 +248,19 @@ colorlinks,
 \setcounter{tocdepth}{2}    % 文章目录
 \tableofcontents
 
+\renewcommand{\listfigurename}{图目录}
+\renewcommand{\listtablename}{表目录} 
 
 \renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
 %设置图目录编号样式，主要是间距
 \listoffigures
 %自动生成图目录
-\addcontentsline{toc}{chapter}{图索引}
+\addcontentsline{toc}{chapter}{图目录}
 
 % 表格目录
 \renewcommand{\numberline}[1]{\lotlabel~#1\hspace*{1em}}
 \listoftables
-\addcontentsline{toc}{chapter}{表索引}
-
+\addcontentsline{toc}{chapter}{表目录}
 
 \newpage
 \pagenumbering{arabic}
